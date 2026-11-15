@@ -35,12 +35,13 @@
 
 First release.
 
-- System-tray app with a dark dashboard, built in C# / WPF on .NET Framework 4.8, no admin rights and no runtime install.
-- Delivered clock read from the hardware `% Processor Performance` counter, so a clock held below base under load is measured, not guessed.
-- Cause attribution into CPU thermal throttle, CPU power limit, CPU at capacity, memory pressure, and disk bottleneck, with a per-second severity and each episode recording the exact numbers behind it.
-- Best-effort temperatures from the native Thermal Zone Information counter (no admin) and the WMI thermal zone, with an optional `LibreHardwareMonitorLib.dll` drop-in for accurate CPU, GPU, and storage readings when run elevated.
-- Continuous top-process sampling so each throttle episode names the app most responsible, never the monitor itself.
-- Live view: a CPU load meter and a throttle meter side by side, the current cause, metric cards, a 90-second multi-series graph, and a throttle timeline.
-- History view: 1 hour, 24 hours, and 7 days, with percent of time throttled, a cause breakdown, a per-bucket bar chart, temperature over time, recent episodes, and the apps most involved.
-- Minute-rollup persistence so days of history cost only kilobytes, plus a JSON episode log.
-- Settings for every threshold and start-with-Windows, plus a tray restart-as-administrator for full sensor temperatures.
+- System-tray app with a dark dashboard that runs without admin rights or a runtime install.
+- Delivered CPU clock measured against the rated base clock.
+- Every second classified by severity and cause: CPU thermal throttle, CPU power limit, CPU at capacity, memory pressure, or disk bottleneck.
+- Throttle episodes that include the readings behind each one and the app most responsible.
+- Temperatures from the Windows thermal zones, plus accurate CPU readings from an optional `LibreHardwareMonitorLib.dll` when run as administrator.
+- Live view of CPU load and throttle meters, the current cause, metric cards, a 90-second graph, and a throttle timeline.
+- History view for 1 hour, 24 hours, and 7 days, showing time throttled, cause breakdown, temperature trend, recent episodes, and the apps most involved.
+- Compact on-disk history and a JSON episode log.
+- Settings for start-with-Windows and the throttle thresholds.
+- Restart as administrator in the tray menu.
