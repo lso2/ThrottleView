@@ -4,7 +4,7 @@
 ![.NET Framework](https://img.shields.io/badge/.NET%20Framework-4.8-512BD4.svg?logo=dotnet&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-7.3-239120.svg?logo=csharp&logoColor=white)
 ![UI](https://img.shields.io/badge/UI-WPF-1f6feb.svg)
-![Version](https://img.shields.io/github/v/release/lso2/ThrottleView?label=Version&color=success)
+![Version](https://img.shields.io/badge/Version-1.2.2-success.svg)
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
 ThrottleView is a system-tray throttle monitor for Windows. It shows when your PC is being throttled, how badly, when, and why. It reads the processor clock against base from the CPU's hardware counter, separates heat from a power limit using temperature, and names the relevant apps. Everything runs locally as a single tray app with no administrator rights and no runtime to install.
