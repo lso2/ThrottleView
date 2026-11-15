@@ -2,7 +2,6 @@
 
 ## 1.2.2
 
-- Relicensed under GPLv3, with LICENSE.txt installed next to the app.
 - Window footer with the running version, GitHub, and Donate links.
 - Fixed the effective clock reading on Intel hybrid CPUs.
 
